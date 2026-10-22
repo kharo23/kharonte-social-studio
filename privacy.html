@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Privacy Policy — Kharonte Social Studio</title>
+<meta name="description" content="How Kharonte Social Studio, a personal single-user tool, handles data: everything stays on the operator's own computer.">
+<style>
+ :root{--bg:#fff;--fg:#15181d;--mut:#5b6472;--line:#e3e7ec;--acc:#2f6bff}
+ @media (prefers-color-scheme:dark){:root{--bg:#0f1216;--fg:#e8ecf1;--mut:#98a2b3;--line:#242a33}}
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+ .wrap{max-width:720px;margin:0 auto;padding:56px 22px 80px}
+ h1{font-size:30px;line-height:1.25;margin:0 0 6px;letter-spacing:-.02em}
+ .sub{color:var(--mut);margin:0 0 36px}
+ h2{font-size:19px;margin:38px 0 10px;letter-spacing:-.01em}
+ ul{padding-left:20px}
+ li{margin:5px 0}
+ code{background:rgba(127,127,127,.14);padding:1px 6px;border-radius:5px;font-size:.9em}
+ a{color:var(--acc)}
+ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);color:var(--mut);font-size:14px}
+ footer a{margin-right:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Privacy Policy</h1>
+<p class="sub">Last updated: 22 October 2026</p>
+
+<p>Kharonte Social Studio is a desktop tool that runs locally on the computer of the person who
+operates it. It is used by one individual, the operator of the studio's own TikTok account
+(<code>@kharonteappdev</code>), to send the studio's own videos to that account. It is not offered
+to the public and has no other users.</p>
+
+<h2>Who this policy is for</h2>
+<p>The only user of the tool is its operator, who is also the owner of the connected TikTok account.
+No personal data of other people is collected, because no other people use the tool.</p>
+
+<h2>What data is accessed</h2>
+<ul>
+  <li><strong>TikTok OAuth tokens</strong> (access token and refresh token) for the operator's own
+      account, obtained through Login Kit with the scopes <code>user.info.basic</code>,
+      <code>video.upload</code> and <code>video.publish</code>.</li>
+  <li><strong>Basic account information</strong> returned by TikTok (display name, account identifier
+      and the creator settings available for posting, such as the privacy options), used only to show
+      which account is connected and to present the posting options.</li>
+  <li><strong>Video files and captions</strong> prepared by the operator on their own computer.</li>
+</ul>
+
+<h2>What data is not accessed</h2>
+<ul>
+  <li>No data about other TikTok users.</li>
+  <li>No followers, comments, messages or analytics of other accounts.</li>
+  <li>No contact lists, location data or device identifiers.</li>
+</ul>
+
+<h2>How data is used</h2>
+<p>Only to connect the operator's own account and to send the video, caption and settings that the
+operator selected and confirmed for each post. Data is not used for advertising, profiling,
+analytics or any other purpose.</p>
+
+<h2>Where data is stored and who receives it</h2>
+<p>Tokens, video files and captions are stored in local files on the operator's own computer. The tool
+has no server and no database, and it does not send data to anyone other than TikTok, to which it
+sends the video and the post settings the operator confirmed. No data is sold, shared or disclosed to
+any other third party.</p>
+
+<h2>Retention and deletion</h2>
+<p>Data stays on the operator's computer until the operator deletes it. The operator can disconnect
+the account inside the tool, which removes the stored tokens, and can revoke the tool's access at any
+time from TikTok's app permission settings. Deleting the tool's folder removes all locally stored data.</p>
+
+<h2>Security</h2>
+<p>The local web page listens only on the operator's own computer. Tokens and client credentials are
+kept in files that are readable only by the operator and are never shown in the page or committed to
+any repository.</p>
+
+<h2>Children</h2>
+<p>The tool is not directed at children and is not used by anyone other than its operator.</p>
+
+<h2>Changes</h2>
+<p>This policy may be updated; the current version is always the one published on this page.</p>
+
+<h2>Contact</h2>
+<p>Kharonte Studio — <a href="mailto:kharonte.appdev@gmail.com">kharonte.appdev@gmail.com</a>.</p>
+
+<footer>
+  <a href="index.html">Home</a>
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="terms.html">Terms of Service</a>
+</footer>
+</div>
+</body>
+</html>

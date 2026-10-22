@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Kharonte Social Studio</title>
+<meta name="description" content="A personal desktop tool of Kharonte Studio, an independent app developer, to send its own videos to its own TikTok account after explicit confirmation.">
+<style>
+ :root{--bg:#fff;--fg:#15181d;--mut:#5b6472;--line:#e3e7ec;--acc:#2f6bff}
+ @media (prefers-color-scheme:dark){:root{--bg:#0f1216;--fg:#e8ecf1;--mut:#98a2b3;--line:#242a33}}
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+ .wrap{max-width:720px;margin:0 auto;padding:56px 22px 80px}
+ h1{font-size:30px;line-height:1.25;margin:0 0 6px;letter-spacing:-.02em}
+ .sub{color:var(--mut);margin:0 0 36px}
+ h2{font-size:19px;margin:38px 0 10px;letter-spacing:-.01em}
+ ul{padding-left:20px}
+ li{margin:5px 0}
+ .card{border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:22px 0}
+ .card p:first-child{margin-top:0}.card p:last-child{margin-bottom:0}
+ code{background:rgba(127,127,127,.14);padding:1px 6px;border-radius:5px;font-size:.9em}
+ a{color:var(--acc)}
+ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);color:var(--mut);font-size:14px}
+ footer a{margin-right:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Kharonte Social Studio</h1>
+<p class="sub">A personal desktop tool of Kharonte Studio for posting its own videos to its own TikTok account.</p>
+
+<p>Kharonte Studio is an independent app developer. It builds and publishes small mobile apps
+and the website <a href="https://kharonte.dev/">kharonte.dev</a>. Kharonte Social Studio is the
+internal tool the studio uses to send promotional videos about its own apps to the studio's
+own TikTok account, <code>@kharonteappdev</code>.</p>
+
+<p>The tool runs on the computer of the person who operates it, in a local web page that is only
+reachable from that computer. It is a single-user tool: there is no hosted service, no sign-up,
+and no other people use it.</p>
+
+<h2>How it uses TikTok</h2>
+
+<div class="card">
+<p>The tool uses TikTok Login Kit and the Content Posting API with the scopes
+<code>user.info.basic</code>, <code>video.upload</code> and <code>video.publish</code>.</p>
+<p>The operator connects only their own TikTok account. Before every post the tool reads the
+account's creator information from TikTok and shows it, selects a video file stored on the
+operator's own computer, lets the operator choose the privacy level (there is no default
+selection), edit the caption and set comment, Duet and Stitch permissions, and asks for explicit
+confirmation of that exact post. Nothing is ever sent without that confirmation.</p>
+</div>
+
+<p>The tool can also send a video to the operator's TikTok inbox as a draft, so that publication is
+completed in the TikTok app.</p>
+
+<h2>What it does not do</h2>
+<ul>
+  <li>It does not post automatically, on a schedule, or without the operator's confirmation of
+      each individual post.</li>
+  <li>It does not read, collect or analyse other users' TikTok data.</li>
+  <li>It does not manage accounts for third parties and cannot be used by other people.</li>
+  <li>It does not automate browsing, following, liking, commenting or any other engagement.</li>
+</ul>
+
+<h2>Data and privacy</h2>
+<p>Everything the tool handles stays on the operator's own computer. See the
+<a href="privacy.html">Privacy Policy</a> for details and the <a href="terms.html">Terms of Service</a>.</p>
+
+<h2>Contact</h2>
+<p>Kharonte Studio — <a href="mailto:kharonte.appdev@gmail.com">kharonte.appdev@gmail.com</a>.</p>
+
+<footer>
+  <a href="index.html">Home</a>
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="terms.html">Terms of Service</a>
+</footer>
+
+</div>
+</body>
+</html>
